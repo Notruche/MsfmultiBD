@@ -1,0 +1,313 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss'
+
+@font-face 
+  font-family: Chalkboard
+  src: url(../../../public/2157-font.otf)
+
+p
+    font-family: Chalkboard
+    font-size: 4vh
+img 
+    max-width: 100%
+    max-height: 100%
+
+.exit
+    margin-left: 5%
+    margin-right: 5%
+    width: 15%
+
+.hasimage
+    max-height: 100vh
+    text-align: center
+    position: relative
+
+.fleche
+  margin: 0
+  top: 50%
+  position: relative
+  cursor: pointer
+  
+.home
+  margin: 0
+  top: 2vh
+  left: 2vw
+  position: absolute
+  max-width: 6.33333333vw
+  cursor: pointer
+
+.lan
+  margin: 0
+  top: 2vh
+  right: 2vw
+  position: absolute
+  max-width: 6.33333333vw
+  cursor: pointer
+
+.gal
+    background-color: #202124
+    height:100vh
+    position: relative
+    overflow: hidden
+
+.perso
+    position: absolute
+    z-index: 3
+    max-width: 30vw !important
+    max-height: 50vh
+    bottom: 0
+    overflow: hidden
+    right: 5vw
+
+.carte
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/Fummeti-Comic-ZC_7alt.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.cartefr
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/FR/Fumetto-Comic_FR-6alt.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.bulle
+    animation: bulle 0.5s
+
+.bulle1
+    position: absolute
+    z-index: 3
+    max-width: 50vw !important
+    max-height: 50vh
+    bottom: 30vh
+    overflow: hidden
+    right: 15vw
+    text-align: right
+    animation: bulle1 0.5s
+
+.x
+    max-height: 5vh
+    cursor: pointer
+
+.animperso
+    cursor: pointer
+    margin-top: 30vh
+    animation: animperso 0.5s
+
+.animperso1
+    margin-top: 0vh
+    animation: animperso1 1s
+
+.animpersostart
+    cursor: pointer
+    margin-top: 30vh
+
+.fondu
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/Photos/Photo-P3.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.fondu2
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/Photos/Photo-P16.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.fondu3
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/Fummeti-Comic-ZC_16.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.fondu3fr
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    background-image: url("../../../public/images/FR/Fumetto-Comic_FR-15.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+
+.warning
+    left: 0
+    top: 0
+    z-index: 0
+    height: 100vh
+    width: 100%
+    position: absolute
+    z-index: 5
+
+.box
+    position: relative 
+    margin-top: 30vh
+    height: 20vh
+    width: 80%
+    margin-left: 10%
+    background-color: #598d80
+    border-style: solid
+    border-color: black
+    text-align: center
+
+.black
+    position: absolute
+    height: 100vh
+    width: 100vw
+    background-color: black
+    opacity: 0.7
+    z-index: 2
+    animation: black 0.5s
+
+.black2
+    position: absolute
+    height: 100vh
+    width: 100vw
+    background-color: black
+    opacity: 0.7
+    z-index: 4
+    animation: black 0.5s
+
+.quizz
+    max-width: 80%
+    margin-top: 5%
+    max-height: 12vh
+
+.reponse
+    max-width: 80%
+    max-height: 12vh
+    margin-top: 5%
+    cursor: pointer
+
+@keyframes black
+    0%
+        opacity: 0
+    100%
+        opacity: 0.7
+
+@keyframes animperso1
+    0%
+        margin-top: 30vh
+    100%
+        margin-top: 0vh
+
+@keyframes animperso
+    0%
+        margin-top: 0vh
+    100%
+        margin-top: 30vh
+
+@keyframes bulle1
+    0%
+        bottom: 15vh
+        opacity: 0
+    100%
+        bottom: 30vh
+        opacity: 1
+
+@keyframes bulle
+    0%
+        bottom: 30vh
+        opacity: 1
+    100%
+        bottom: 15vh
+        opacity: 0
+
+.fade-leave-active 
+  transition: opacity 0.7s ease
+
+.fade-leave-to 
+  opacity: 0
+
+.test-leave-active 
+    transition: background-image 3s ease
+
+.test-leave-to 
+    background-image: url("../../../public/images/Fummeti-Comic-ZC_3.jpg")
+
+.testfr-leave-active 
+    transition: background-image 3s ease
+
+.testfr-leave-to
+    background-image: url("../../../public/images/FR/Fumetto-Comic_FR-2.jpg")
+
+.test2-leave-active 
+    transition: background-image 3s ease
+
+.test2-leave-to 
+    background-image: url("../../../public/images/Fummeti-Comic-ZC_17.jpg")
+
+.test2fr-leave-active 
+    transition: background-image 3s ease
+
+.test2fr-leave-to
+    background-image: url("../../../public/images/FR/Fumetto-Comic_FR-16.jpg")
+
+.test3-leave-active 
+    transition: background-image 3s ease
+
+.test3-leave-to 
+    background-image: url("../../../public/images/Photos/Photo-P16.png")
+
+.test3fr-leave-active 
+    transition: background-image 3s ease
+
+.test3fr-leave-to 
+    background-image: url("../../../public/images/Photos/Photo-P16.png")
+
+.carte-enter-active
+    transition: background-image 2s ease
+    transition-delay: 2s
+
+.carte-enter-from
+    background-image: url("../../../public/images/Fummeti-Comic-ZC_7.jpg")
+
+.cartefr-enter-active
+    transition: background-image 2s ease
+    transition-delay: 2s
+
+.cartefr-enter-from
+    background-image: url("../../../public/images/FR/Fumetto-Comic_FR-6.jpg")
+
+.smart
+    display: none
+    @media ( max-width: 100vh )
+        display: inline
+        text-align: center
+        padding-top: 30vh
+        position: absolute
+        top: 0
+        left: 0
+        height: 100vh
+        width: 100vw
+        background-color: white
+        z-index: 100
+
+.rotate
+    max-height: 30vh
+        
