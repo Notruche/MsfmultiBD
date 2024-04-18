@@ -12057,6 +12057,18 @@ img {
   width: 100%;
 }
 
+.carteen {
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  background-image: url("../../../public/images/EN/Fumetto-Comic_EN-3-6alt.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
 .bulle {
   animation: bulle 0.5s;
 }
@@ -12066,7 +12078,7 @@ img {
   z-index: 3;
   max-width: 50vw !important;
   max-height: 50vh;
-  bottom: 30vh;
+  bottom: 35vh;
   overflow: hidden;
   right: 15vw;
   text-align: right;
@@ -12136,6 +12148,18 @@ img {
   z-index: 0;
   height: 100vh;
   background-image: url("../../../public/images/FR/Fumetto-Comic_FR-15.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.fondu3en {
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  background-image: url("../../../public/images/EN/Fumetto-Comic_EN-3-15.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -12227,13 +12251,13 @@ img {
     opacity: 0;
   }
   100% {
-    bottom: 30vh;
+    bottom: 35vh;
     opacity: 1;
   }
 }
 @keyframes bulle {
   0% {
-    bottom: 30vh;
+    bottom: 35vh;
     opacity: 1;
   }
   100% {
@@ -12261,8 +12285,16 @@ img {
   transition: background-image 3s ease;
 }
 
+.testen-leave-active {
+  transition: background-image 3s ease;
+}
+
 .testfr-leave-to {
   background-image: url("../../../public/images/FR/Fumetto-Comic_FR-2.jpg");
+}
+
+.testen-leave-to {
+  background-image: url("../../../public/images/EN/Fumetto-Comic_EN-3-2.jpg");
 }
 
 .test2-leave-active {
@@ -12277,8 +12309,16 @@ img {
   transition: background-image 3s ease;
 }
 
+.test2en-leave-active {
+  transition: background-image 3s ease;
+}
+
 .test2fr-leave-to {
   background-image: url("../../../public/images/FR/Fumetto-Comic_FR-16.jpg");
+}
+
+.test2en-leave-to {
+  background-image: url("../../../public/images/EN/Fumetto-Comic_EN-3-16.jpg");
 }
 
 .test3-leave-active {
@@ -12293,7 +12333,15 @@ img {
   transition: background-image 3s ease;
 }
 
+.test3en-leave-active {
+  transition: background-image 3s ease;
+}
+
 .test3fr-leave-to {
+  background-image: url("../../../public/images/Photos/Photo-P16.png");
+}
+
+.test3en-leave-to {
   background-image: url("../../../public/images/Photos/Photo-P16.png");
 }
 
@@ -12311,8 +12359,17 @@ img {
   transition-delay: 2s;
 }
 
+.carteen-enter-active {
+  transition: background-image 2s ease;
+  transition-delay: 2s;
+}
+
 .cartefr-enter-from {
   background-image: url("../../../public/images/FR/Fumetto-Comic_FR-6.jpg");
+}
+
+.carteen-enter-from {
+  background-image: url("../../../public/images/EN/Fumetto-Comic_EN-3-6.jpg");
 }
 
 .smart {

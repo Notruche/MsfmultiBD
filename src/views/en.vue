@@ -6,13 +6,13 @@
     <Transition name="fade">
     <div :class="{ bulle1: disabled }"  v-if="disabled==true" class="bulle">
       <img src="../../public/images/x.png" class="x" v-on:click="retour()"> <br>
-      <img src="../../public/images/bullefr/bulle1.png" v-if="i==1">
-      <img src="../../public/images/bullefr/bulle2.png" v-if="i==4">
-      <img src="../../public/images/bullefr/bulle3.png" v-if="i==7">
-      <img src="../../public/images/bullefr/bulle5.png" v-if="i==13">
-      <img src="../../public/images/bullefr/bulle4.png" v-if="i==12">
-      <img src="../../public/images/bullefr/bulle6.png" v-if="i==14">
-      <img src="../../public/images/bullefr/bulle7.png" v-if="i==26">
+      <img src="../../public/images/bulleen/bulle1.png" v-if="i==1">
+      <img src="../../public/images/bulleen/bulle2.png" v-if="i==4">
+      <img src="../../public/images/bulleen/bulle3.png" v-if="i==7">
+      <img src="../../public/images/bulleen/bulle5.png" v-if="i==13">
+      <img src="../../public/images/bulleen/bulle4.png" v-if="i==12">
+      <img src="../../public/images/bulleen/bulle6.png" v-if="i==14">
+      <img src="../../public/images/bulleen/bulle7.png" v-if="i==26">
     </div>
   </Transition>
     <div class="perso" v-if="i==1">
@@ -50,50 +50,50 @@
     <div class="col-10 hasimage gal">
       <div class="warning" v-if="warn">
         <div class="box pt-3">
-          <p>Revenir à la première page ?</p>
-          <button class="btn btn-success exit mt-3" v-on:click="yes()">Oui</button>
-          <button class="btn btn-danger exit mt-3" v-on:click="no()">Non</button>
+          <p>Return to first page ?</p>
+          <button class="btn btn-success exit mt-3" v-on:click="yes()">Yes</button>
+          <button class="btn btn-danger exit mt-3" v-on:click="no()">No</button>
         </div>
       </div>
       <div class="warning" v-if="langue">
       <div class="box pt-3">
         <p>Please select a language</p>
-        <button class="btn btn-success exit mt-3" v-on:click="langclose()">Français</button>
+        <router-link to="/MsfmultiBD/FR"> <button class="btn btn-success exit mt-3">Français</button></router-link>
         <router-link to="/MsfmultiBD/"><button class="btn btn-success exit mt-3">Deutsch</button></router-link>
-        <router-link to="/MsfmultiBD/EN"><button class="btn btn-success exit mt-3">English</button></router-link>
+        <button class="btn btn-success exit mt-3" v-on:click="langclose()">English</button>
       </div>
     </div>
-      <img v-if="i == 1" src="../../public/images/FR/Fumetto-Comic_FR-1.jpg" alt="">
-      <Transition name="testfr">
+      <img v-if="i == 1" src="../../public/images/EN/Fumetto-Comic_EN-3-1.jpg" alt="">
+      <Transition name="testen">
         <div class="fondu" v-if="i == 2">  </div>
     </Transition>
-      <img v-if="i == 4" src="../../public/images/FR/Fumetto-Comic_FR-2.jpg" alt="">
-      <img v-if="i == 5" src="../../public/images/FR/Fumetto-Comic_FR-3.jpg" alt="">
-      <img v-if="i == 6" src="../../public/images/FR/Fumetto-Comic_FR-4.jpg" alt="">
-      <img v-if="i == 7" src="../../public/images/FR/Fumetto-Comic_FR-5.jpg" alt="">
-      <Transition name="cartefr">
-      <div v-if="i == 8" class="cartefr" alt=""> </div>
+      <img v-if="i == 4" src="../../public/images/EN/Fumetto-Comic_EN-3-2.jpg" alt="">
+      <img v-if="i == 5" src="../../public/images/EN/Fumetto-Comic_EN-3-3.jpg" alt="">
+      <img v-if="i == 6" src="../../public/images/EN/Fumetto-Comic_EN-3-4.jpg" alt="">
+      <img v-if="i == 7" src="../../public/images/EN/Fumetto-Comic_EN-3-5.jpg" alt="">
+      <Transition name="carteen">
+      <div v-if="i == 8" class="carteen" alt=""> </div>
       </Transition>
-      <img v-if="i == 9" src="../../public/images/FR/Fumetto-Comic_FR-7.jpg" alt="">
-      <img v-if="i == 10" src="../../public/images/FR/Fumetto-Comic_FR-8.jpg" alt="">
-      <img v-if="i == 11" src="../../public/images/FR/Fumetto-Comic_FR-9.jpg" alt="">
-      <img v-if="i == 12" src="../../public/images/FR/Fumetto-Comic_FR-10.jpg" alt="">
-      <img v-if="i == 13" src="../../public/images/FR/Fumetto-Comic_FR-11.jpg" alt="">
-      <img v-if="i == 14" src="../../public/images/FR/Fumetto-Comic_FR-12.jpg" alt="">
-      <img v-if="i == 15" src="../../public/images/FR/Fumetto-Comic_FR-13.jpg" alt="">
-      <img v-if="i == 16" src="../../public/images/FR/Fumetto-Comic_FR-14.jpg" alt="">
-      <Transition name="test3fr">
-      <div class="fondu3fr" v-if="i == 17">  </div>
+      <img v-if="i == 9" src="../../public/images/EN/Fumetto-Comic_EN-3-7.jpg" alt="">
+      <img v-if="i == 10" src="../../public/images/EN/Fumetto-Comic_EN-3-8.jpg" alt="">
+      <img v-if="i == 11" src="../../public/images/EN/Fumetto-Comic_EN-3-9.jpg" alt="">
+      <img v-if="i == 12" src="../../public/images/EN/Fumetto-Comic_EN-3-10.jpg" alt="">
+      <img v-if="i == 13" src="../../public/images/EN/Fumetto-Comic_EN-3-11.jpg" alt="">
+      <img v-if="i == 14" src="../../public/images/EN/Fumetto-Comic_EN-3-12.jpg" alt="">
+      <img v-if="i == 15" src="../../public/images/EN/Fumetto-Comic_EN-3-13.jpg" alt="">
+      <img v-if="i == 16" src="../../public/images/EN/Fumetto-Comic_EN-3-14.jpg" alt="">
+      <Transition name="test3en">
+      <div class="fondu3en" v-if="i == 17">  </div>
     </Transition>
-      <Transition name="test2fr">
+      <Transition name="test2en">
         <div class="fondu2" v-if="i == 19">  </div>
     </Transition>
-      <img v-if="i == 21" src="../../public/images/FR/Fumetto-Comic_FR-16.jpg" alt="">
-      <img v-if="i == 22" src="../../public/images/FR/Fumetto-Comic_FR-17.jpg" alt="">
-      <img v-if="i == 23" src="../../public/images/FR/Fumetto-Comic_FR-18.jpg" alt="">
-      <img v-if="i == 24" src="../../public/images/FR/Fumetto-Comic_FR-19.jpg" alt="">
-      <img v-if="i == 25" src="../../public/images/FR/Fumetto-Comic_FR-20.jpg" alt="">
-      <img v-if="i == 26" src="../../public/images/FR/Fumetto-Comic_FR-21.jpg" alt="">
+      <img v-if="i == 21" src="../../public/images/EN/Fumetto-Comic_EN-3-16.jpg" alt="">
+      <img v-if="i == 22" src="../../public/images/EN/Fumetto-Comic_EN-3-17.jpg" alt="">
+      <img v-if="i == 23" src="../../public/images/EN/Fumetto-Comic_EN-3-18.jpg" alt="">
+      <img v-if="i == 24" src="../../public/images/EN/Fumetto-Comic_EN-3-19.jpg" alt="">
+      <img v-if="i == 25" src="../../public/images/EN/Fumetto-Comic_EN-3-20.jpg" alt="">
+      <img v-if="i == 26" src="../../public/images/EN/Fumetto-Comic_EN-3-21.jpg" alt="">
     </div>
     <div class="col-1 hasimage">
       <img src="../../public/images/ui/lang.png" alt="" class="lan"

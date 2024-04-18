@@ -58,10 +58,10 @@
     <div class="warning" v-if="langue">
       <div class="box pt-3">
         <p>Please select a language</p>
-        <router-link to="/FR">
+        <router-link to="/MsfmultiBD/FR">
         <button class="btn btn-success exit mt-3">Français</button> </router-link>
         <button class="btn btn-success exit mt-3" v-on:click="langclose()">Deutsch</button>
-        <button class="btn btn-success exit mt-3">English</button>
+        <router-link to="/MsfmultiBD/EN"><button class="btn btn-success exit mt-3">English</button></router-link>
       </div>
     </div>
     <img v-if="i == 1" src="../../public/images/Fummeti-Comic-ZC_1.jpg" alt="">
